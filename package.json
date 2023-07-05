@@ -1,0 +1,15 @@
+{
+  "name": "cypressPetProject",
+  "version": "1.0.0",
+  "scripts": {
+    "tests_chrome": "npx cypress run  --spec cypress/tests/e2e/1-getting-started/todo.cy.ts --browser chrome",
+    "tests_chrome_headed": "npx cypress run  --spec cypress/tests/myE2e/mainPage.spec.ts --browser chrome --headed true",
+    "tests_chrome_headed_noexit": "npx cypress run  --spec cypress/tests/myE2e/mainPage.spec.ts --browser chrome --headed true --no-exit"
+  },
+  "devDependencies": {
+    "cypress": "^12.16.0",
+    "cypress-xpath": "^2.0.1",
+    "ts-node": "10.7.0",
+    "typescript": "4.6.3"
+  }
+}
