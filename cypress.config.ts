@@ -5,7 +5,7 @@ export default defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   projectId: '9fqapc',
   env: {
-    apiUrl: 'http://localhost:5002/'
+    apiUrl: 'http://ea_api:8001/'
   },
   e2e: {
     retries: {
@@ -20,7 +20,7 @@ export default defineConfig({
 
       const appUrls = {
         localhost: 'http://localhost:5003/',
-        qa: 'http://localhost:5003/',
+        qa: 'http://ea_webapp:8000/',
         api: 'http://localhost:5002/',
         dev: 'http://localhost:9000/'
       }
